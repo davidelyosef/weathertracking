@@ -11,7 +11,7 @@ const routes: Routes = [
   {path: "favorites", component: FavoritesComponent},
   {path: "page-not-found", component: Page404Component},
   {path: "", redirectTo: "/main", pathMatch: "full"},
-  {path: "**", redirectTo: "/page-not-found", pathMatch:"full"}
+  {path: "**", redirectTo: "/main", pathMatch:"full"}
 ];
 
 @NgModule({
