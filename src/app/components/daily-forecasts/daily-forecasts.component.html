@@ -1,0 +1,16 @@
+<div>
+
+    <h4>{{dayOfWeek}}</h4>
+    <i>{{dateString}}</i>
+
+    <section>
+        <i *ngIf="celsius">{{temperature}}&deg;</i>&nbsp;
+        <span class="switcher switcher-2">
+            <input type="checkbox" id="switcher-2" (change)="setTemperature($event)">
+            <label for="switcher-2"></label>
+        </span><br />
+        <img src="./assets/images/{{imageName}}.png"><br />
+        <i>{{day.Day.IconPhrase}}</i>
+    </section>
+
+</div>

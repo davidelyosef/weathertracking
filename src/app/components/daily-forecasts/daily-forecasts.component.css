@@ -1,0 +1,59 @@
+div {
+    width: 210px;
+    height: 210px;
+    padding: 5px;
+    margin: 5px;
+    background-image: linear-gradient(rgb(152, 159, 255), rgb(22, 37, 255));
+    border: 1px solid black;
+    border-radius: 10%;
+    display: inline-block;
+    position: relative;
+    overflow: auto;
+}
+div section {
+    text-align: center;
+    overflow: auto;
+}
+section img {
+    width: 110px;
+    height: 75px;
+}
+div > i {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+section i {
+    font-size: larger;
+}
+
+section span.switcher input {
+    appearance: none;
+    position: relative;
+    width: 50px;
+    height: 20px;
+    border-radius: 25px;
+    background-color: #1E1E1E;
+    outline: none;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+section span.switcher input:before {
+  content: ' F';
+}
+section span.switcher input:after {
+  content: 'C';
+}
+section span.switcher.switcher-2 {
+  overflow: hidden;
+}
+section span.switcher.switcher-2 input:before {
+  color: #1E1E1E;
+}
+section span.switcher.switcher-2 input:after {
+  color: #FFFFFF;
+}
+section span.switcher.switcher-2 input:checked {
+  background-color: #FFFFFF;
+}
+
