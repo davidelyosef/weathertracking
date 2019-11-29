@@ -14,7 +14,6 @@ export class FavoritesComponent implements OnInit {
     if (favorites) {
       this.favorites = JSON.parse(favorites);
       this.favorites = this.favorites.length < 1 ? undefined : this.favorites;
-      console.log("this.favorites: ", this.favorites);
     }
 
   }

@@ -13,15 +13,10 @@ export class NavBarComponent {
 
   handle(str) {
     if (str) {
-      console.log("on");
       this.redux.getState().bgColor = "white";
-      console.log(this.redux.getState().bgColor);
     }
     else {
-      console.log("off");
       this.redux.getState().bgColor = "black";
-      console.log(this.redux.getState().bgColor);
-
     }
   }
 }
