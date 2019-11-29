@@ -1,5 +1,6 @@
 div {
     height: 100vh;
+    overflow: auto;
 }
 main {
     margin: 10px;

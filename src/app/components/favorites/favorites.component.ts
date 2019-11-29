@@ -9,8 +9,6 @@ export class FavoritesComponent implements OnInit {
 
   public favorites: any;
 
-  constructor() { }
-
   ngOnInit() {
     const favorites = localStorage.getItem("myFavorites");
     if (favorites) {

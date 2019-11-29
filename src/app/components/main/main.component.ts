@@ -45,22 +45,7 @@ export class MainComponent{
     else {
       this.openModal(template);
     }
-    // test with json
-    // this.weatherService.getLocationKeyByJson().subscribe(lk => {
-    //   this.city_id = lk[0].Key;
-    //   this.searchedCity = lk[0].LocalizedName;
-    //   this.weatherService.getJerusalemByJson().subscribe(cd => {
-    //     this.days = cd.DailyForecasts;
-    //     this.today = cd.DailyForecasts[0];
 
-    //     const favorites = localStorage.getItem("myFavorites");
-    //     if (favorites) {
-    //       let myFavorites = JSON.parse(favorites);
-    //       myFavorites.map(f =>
-    //         this.inFavorites = f.id === this.city_id ? true : false);
-    //     }
-    //   });
-    // });
   }
 
   public openModal(template: TemplateRef<any>) {

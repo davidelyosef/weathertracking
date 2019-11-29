@@ -3,9 +3,8 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from "@angular/forms";
 import { ModalModule } from 'ngx-bootstrap/modal';
-// import { MatAutocompleteModule } from "@angular/material";
-
 import { AppRoutingModule } from './app-routing.module';
+
 import { LayoutComponent } from './components/layout/layout.component';
 import { FavoritesComponent } from './components/favorites/favorites.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
@@ -33,7 +32,6 @@ import { Reducer } from './redux/reducer';
     FormsModule,
     ModalModule.forRoot(),
     NgReduxModule
-    // MatAutocompleteModule
   ],
   providers: [],
   bootstrap: [LayoutComponent]

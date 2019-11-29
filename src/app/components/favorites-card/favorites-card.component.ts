@@ -9,8 +9,6 @@ export class FavoritesCardComponent implements OnInit {
   @Input() favorite: any;
   public temperature: string;
 
-  constructor() { }
-
   ngOnInit() {
     const minFeh = this.favorite.temperature.Minimum.Value;
     const minCel = Math.round((minFeh - 32) * 5/9);

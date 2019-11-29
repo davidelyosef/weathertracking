@@ -12,7 +12,6 @@ export class NavBarComponent {
   public constructor(private redux: NgRedux<AppState>) { }
 
   handle(str) {
-    // console.log(str);
     if (str) {
       console.log("on");
       this.redux.getState().bgColor = "white";
