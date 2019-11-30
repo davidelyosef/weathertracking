@@ -9,7 +9,6 @@ import { LayoutComponent } from './components/layout/layout.component';
 import { FavoritesComponent } from './components/favorites/favorites.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { MainComponent } from './components/main/main.component';
-import { Page404Component } from './components/page404/page404.component';
 import { DailyForecastsComponent } from './components/daily-forecasts/daily-forecasts.component';
 import { FavoritesCardComponent } from './components/favorites-card/favorites-card.component';
 import { NgReduxModule, NgRedux } from 'ng2-redux';
@@ -22,7 +21,6 @@ import { Reducer } from './redux/reducer';
   FavoritesComponent,
   NavBarComponent,
   MainComponent,
-  Page404Component,
   DailyForecastsComponent,
   FavoritesCardComponent],
   imports: [
