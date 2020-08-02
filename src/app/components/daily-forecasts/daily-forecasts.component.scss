@@ -1,0 +1,55 @@
+div {
+  width: 210px;
+  height: 210px;
+  padding: 5px;
+  margin: 5px;
+  border-right: 2px solid gray;
+  border-left: 2px solid gray;
+  border-radius: 10%;
+  display: inline-block;
+  position: relative;
+  overflow: auto;
+  section {
+    text-align: center;
+    overflow: auto;
+    img {
+      width: 110px;
+      height: 75px;
+    }
+    i {
+      font-size: larger;
+    }
+    span.switcher.switcher-2 {
+      overflow: hidden;
+    }
+    .switcher {
+      input {
+        appearance: none;
+        position: relative;
+        width: 50px;
+        height: 20px;
+        border-radius: 25px;
+        background-color: #1E1E1E;
+        outline: none;
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+      }
+      input:before {
+        content: ' F';
+        color: #1E1E1E;
+      }
+      input:after {
+        content: 'C';
+        color: #FFFFFF;
+      }
+      input:checked {
+        background-color: #FFFFFF;
+      }
+    }
+  }
+}
+div > i {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}

@@ -1,0 +1,10 @@
+<!-- if there is favorites -->
+<div *ngIf="favorites">
+    <h2><i><b>Favorite cities: </b></i></h2>
+    <app-favorites-card *ngFor="let f of favorites" [favorite]="f"></app-favorites-card>
+</div>
+
+<!-- if there is no favorites -->
+<div *ngIf="!favorites">
+    <h2><i><b>You don't have any favorite cities.</b></i></h2>
+</div>

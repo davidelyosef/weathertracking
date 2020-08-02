@@ -1,0 +1,13 @@
+<div id="nav">
+    <a routerLink="/main">Main</a>
+
+    <div class="mid">
+        <label class="rocker">
+            <input type="checkbox" checked (change)="handle($event.target.checked)">
+            <span class="switch-left">On</span>
+            <span class="switch-right">Off</span>
+        </label>
+    </div>
+    
+    <a routerLink="/favorites">Favorites</a>
+</div>

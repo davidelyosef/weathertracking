@@ -1,0 +1,62 @@
+<div>
+
+    <!-- <button id="increment" (click)="increment()">Increment</button>
+
+    <div>Current Count: {{ count$ | async }}</div>
+
+    <button id="decrement" (click)="decrement()">Decrement</button>
+
+    <button id="reset" (click)="reset()">Reset Counter</button> -->
+
+
+    <!-- Search Input -->
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search a city..." 
+        [(ngModel)]="city" (keydown.enter)="search(template)">
+        
+        <div class="input-group-append">
+            <button class="btn btn-secondary" type="button" (click)="search(template)">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Buttons -->
+    <div>
+        <button *ngIf="days && inFavorites" #deleteFavorite class="btn btn-outline-info"
+            (click)="deleteFromFavorites()">
+            Delete From Favorites <i class="fa fa-heart"></i>
+        </button>
+        <button *ngIf="days && !inFavorites" #addFavorite class="btn btn-info" (click)="addToFavorites()">
+            Add To Favorites <i class="fa fa-heart"></i>
+        </button>
+        <button class="btn btn-info" (click)="searchByLocation()">
+            Find By Location <i class="fa fa-map-marker"></i>
+        </button>
+    </div>
+
+    <!-- Display city temperature -->
+    <div *ngIf="days">
+        <h3>{{ searchedCity }}</h3>
+        <app-daily-forecasts *ngFor="let day of days" [day]="day"></app-daily-forecasts>
+    </div>
+
+    <!-- Error modal -->
+    <ng-template #template>
+        <div class="modal-header">
+            <h4 class="modal-title pull-left">Error</h4>
+            <button type="button" class="close pull-right" aria-label="close" (click)="modalRef.hide()">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <i>Please insert <u>only</u> english letters</i>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary pull-right" (click)="modalRef.hide()">
+                Close
+            </button>
+        </div>
+    </ng-template>
+
+</div>

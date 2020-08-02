@@ -1,0 +1,14 @@
+div {
+    text-align: center;
+  div:nth-of-type(3) {
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    i {
+        color: red;
+    }
+    button {
+        margin: 5px;
+    }
+  }  
+}
